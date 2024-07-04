@@ -29,8 +29,8 @@ public class Application {
 
         //OOP
         Animal animal = new Animal("black", 4, false); // This animal is mostly black. It has 4 paws and no fur.
-        Dog dog = new Dog(); // This animal is mostly white. It has 4 paws and a fur.
-        Bird bird = new Bird(); // This animal is mostly blue. It has 2 paws and no fur. Moreover, it has 2 wings and can fly.
+        Dog dog = new Dog(); // This animal is mostly white. It has 4 paws and fur.
+        Bird bird = new Bird(); // This animal is mostly red. It has 2 paws and has fur. Moreover, it has 2 wings and can fly.
         System.out.println(animal.getDescription());
         System.out.println(dog.getDescription());
         System.out.println(bird.getDescription());
