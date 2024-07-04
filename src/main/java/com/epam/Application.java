@@ -11,14 +11,14 @@ import com.epam.loops.MultiplicationTable;
 
 public class Application {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         //Conditions
         SeasonDeterminer.tellTheSeason(8);
-        TriangleSidesValidator.validate(3,4,5);
+        TriangleSidesValidator.validate(3, 4, 5);
         DaysInMonth.printDays(1991, 6);
         IntegerDivider.printCompletelyDivided(20, 3);
         CoordinatePane.printQuadrant(1, -8);
-        BitwiseValuesSwap.swap(2,4);
+        BitwiseValuesSwap.swap(2, 4);
 
         //Lang Syntax
         NumberReverter.revert(567);

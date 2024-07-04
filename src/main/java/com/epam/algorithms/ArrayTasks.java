@@ -24,7 +24,7 @@ public class ArrayTasks {
      */
     public int[] generateNumbers(int length) {
         int[] array = new int[length];
-        for(int i = 0; i < length; i++) array[i] = i+1;
+        for (int i = 0; i < length; i++) array[i] = i + 1;
         return array;
     }
 
@@ -51,9 +51,9 @@ public class ArrayTasks {
      */
     public int findIndexOfNumber(int[] arr, int number) {
         int index = -1;
-        for(int i = 0; i < arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
 
-            if(arr[i] == number) {
+            if (arr[i] == number) {
                 index = i;
                 break;
             }
@@ -72,9 +72,9 @@ public class ArrayTasks {
     public String[] reverseArray(String[] arr) {
 
         String[] reversedArr = new String[arr.length];
-        for(int i = 0; i < arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
 
-            reversedArr[i] = arr[arr.length-1-i];
+            reversedArr[i] = arr[arr.length - 1 - i];
 
         }
         return reversedArr;
@@ -90,13 +90,13 @@ public class ArrayTasks {
      */
     public int[] getOnlyPositiveNumbers(int[] arr) {
         int new_size = 0;
-        for(int i = 0; i < arr.length; i++) if(arr[i] > 0) new_size++;
+        for (int i = 0; i < arr.length; i++) if (arr[i] > 0) new_size++;
         int[] positiveArr = new int[new_size];
 
         int index = 0;
-        for(int i = 0; i < arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
 
-            if(arr[i] > 0){
+            if (arr[i] > 0) {
                 positiveArr[index] = arr[i];
                 index++;
             }
@@ -117,11 +117,11 @@ public class ArrayTasks {
      */
     public static int[][] sortRaggedArray(int[][] arr) {
         int[][] sorted_arr = arr.clone();
-        for(int i = 0; i < sorted_arr.length; i++){
+        for (int i = 0; i < sorted_arr.length; i++) {
 
-            for(int k = i + 1; k < sorted_arr.length; k++){
+            for (int k = i + 1; k < sorted_arr.length; k++) {
 
-                if(sorted_arr[i].length > sorted_arr[k].length){
+                if (sorted_arr[i].length > sorted_arr[k].length) {
 
                     int[] temp = sorted_arr[i];
                     sorted_arr[i] = sorted_arr[k];
@@ -132,13 +132,13 @@ public class ArrayTasks {
             }
 
         }
-        for(int i = 0; i < sorted_arr.length; i++){
+        for (int i = 0; i < sorted_arr.length; i++) {
 
-            for(int k = 0; k < sorted_arr[i].length; k++){
+            for (int k = 0; k < sorted_arr[i].length; k++) {
 
-                for(int j = k+1; j < sorted_arr[i].length; j++){
+                for (int j = k + 1; j < sorted_arr[i].length; j++) {
 
-                    if(sorted_arr[i][k] > sorted_arr[i][j]){
+                    if (sorted_arr[i][k] > sorted_arr[i][j]) {
 
                         int temp = sorted_arr[i][k];
                         sorted_arr[i][k] = sorted_arr[i][j];
