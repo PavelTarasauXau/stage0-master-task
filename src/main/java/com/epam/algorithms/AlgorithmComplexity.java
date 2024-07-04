@@ -1,4 +1,3 @@
-
 package com.epam.algorithms;
 
 import com.epam.algorithms.utils.Complexity;

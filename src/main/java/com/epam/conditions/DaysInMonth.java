@@ -1,4 +1,3 @@
-
 package com.epam.conditions;
 
 public class DaysInMonth {
