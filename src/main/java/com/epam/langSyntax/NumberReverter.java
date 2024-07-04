@@ -1,16 +1,18 @@
 package com.epam.langSyntax;
 
+import java.util.Stack;
+
 public class NumberReverter {
 
-    int reverse = 0;
-    public void revert(int number) {
-        while(number != 0)
-        {
-            int remainder = number % 10;
-            reverse = reverse * 10 + remainder;
-            number = number/10;
+    public static void revert(int number) {
+
+        int revertedNumber = 0;
+        while(number != 0){
+            revertedNumber = revertedNumber * 10 + number % 10;
+            number = number / 10;
+
         }
+        System.out.println(revertedNumber);
     }
 
 }
-
