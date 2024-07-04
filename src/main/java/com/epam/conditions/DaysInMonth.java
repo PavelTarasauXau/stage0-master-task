@@ -1,3 +1,4 @@
+
 package com.epam.conditions;
 
 public class DaysInMonth {
@@ -6,11 +7,12 @@ public class DaysInMonth {
 
     public static void printDays(int year, int month) {
 
-        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+        if(month >= 1 && month <= 12 && year >= 0) {
 
-            if (year % 4 == 0 && month - 1 == 1) System.out.println(29);
-            else System.out.println(months[month - 1]);
-        } else System.out.println("invalid date");
+            if(((year % 4 == 0 && year%100!=0) || year % 400 == 0) && month-1 == 1) System.out.println(29);
+            else System.out.println(months[month-1]);
+        }
+        else System.out.println("invalid date");
 
     }
 
