@@ -12,32 +12,31 @@ import com.epam.loops.MultiplicationTable;
 public class Application {
 
     public static void main(String[] args){
+        //Conditions
+        SeasonDeterminer.tellTheSeason(8);
+        TriangleSidesValidator.validate(3,4,5);
+        DaysInMonth.printDays(1991, 6);
+        IntegerDivider.printCompletelyDivided(20, 3);
+        CoordinatePane.printQuadrant(1, -8);
+        BitwiseValuesSwap.swap(2,4);
+
+        //Lang Syntax
+        NumberReverter.revert(567);
+        DigitsSumCalculator.calculateSum(1337);
+
+        //Loops
+        MultiplicationTable.printTable(4);
+
         //OOP
-        Animal animal = new Animal("green", 2, false); // This animal is mostly green. It has 2 paws and no fur.
-        Dog dog = new Dog(); // This animal is mostly brown. It has 4 paws and a fur.
+        Animal animal = new Animal("black", 4, false); // This animal is mostly black. It has 4 paws and no fur.
+        Dog dog = new Dog(); // This animal is mostly white. It has 4 paws and a fur.
         Bird bird = new Bird(); // This animal is mostly blue. It has 2 paws and no fur. Moreover, it has 2 wings and can fly.
         System.out.println(animal.getDescription());
         System.out.println(dog.getDescription());
         System.out.println(bird.getDescription());
-        //Lang Syntax
-        NumberReverter.revert(8374);
-        DigitsSumCalculator.calculateSum(2131);
-        //Conditions
-        SeasonDeterminer.tellTheSeason(15);
-        TriangleSidesValidator.validate(1,3,3);
-        DaysInMonth.printDays(2011, 2);
-        IntegerDivider.printCompletelyDivided(20, 3);
-        CoordinatePane.printQuadrant(3, -1);
-        BitwiseValuesSwap.swap(1,6);
-        //Loops
-        MultiplicationTable.printTable(6);
+
     }
 
 
 }
-/*
- * class animal is a parent class, with parameters we put data into arguments and got information by method getDescription().
- * class Dog is child class from Animal, it extends method getDescription() and it's properties like color, numberOfPaws and hasFur
- * key word super calls constructor of Parent class animal and put arguments into class Dog.
- * with our class Bird is the same situation, but there we have override method getDescription(), it has't parameters like it's parent class.
- */
+
